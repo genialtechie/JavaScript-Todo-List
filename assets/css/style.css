@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+html, body, #container{
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lawngreen;
+    
+    background-image: 
+        -webkit-linear-gradient(left, yellow, lawngreen);
+    background-image: 
+        -o-linear-gradient(left, yellow, lawngreen);
+    background-image: 
+        linear-gradient(to right, yellow, lawngreen);
+}
+
+#to-do {
+    display: flex;
+    flex-flow: column;
+    width: 350px;
+    height: auto;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    height: 40px;
+    font-weight: bold;
+    padding: 0 15px;
+    color: white;
+}
+
+#new-to-do {
+    width: 335px;
+    height: 35px;
+    border: none;
+    background-color: lightgray;
+    padding-left: 15px;
+}
+
+#toggle{
+    cursor: pointer;
+}
+
+#new-to-do:focus {
+    outline: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    width: 335px;
+    height: 35px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+.text {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+
+.delete-todo {
+    color: #000;
+    height: auto;
+    width: auto;
+    font-size: 25px;
+}
+
+.trash {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gray{
+    background-color: lightgray;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#empty-state{
+    height: auto;
+    width: 350px;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#empty-state p {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#todo-list:empty {
+    display: none;
+}
+  
+#todo-list:empty + #empty-state {
+    display: flex;
+}
