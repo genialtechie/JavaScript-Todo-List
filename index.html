@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    
+    <title>Todo List App</title>
+
+</head>
+
+<body>
+
+	<div  id="container">
+	    <div id="to-do">
+	        <div id="header">
+	            <span>TO-DO LIST</span>
+	            <i class="fas fa-plus" id="toggle"></i>
+	        </div>
+			<div><input autocomplete="off" type="text" id="new-to-do" class="hide" placeholder="Add New Todo"></div>
+		</div>
+		<div id="todo-list"></div>
+		<div id="empty-state">
+			<span><img src="assets/img/hangouts-empty-state.png" alt=""></span>
+			<h3>No Todos</h3>
+			<p>What do you want to get done today? Tap the + button to add a todo</p>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/toDo.js"></script>
+</body>
+
+</html>
